@@ -1,0 +1,11 @@
+select * from categorias
+
+update categorias set descricao = 'bazar alterado' where categoriaid = 2 
+
+
+insert into categorias (descricao) values ('Notebooks'),('Tablets'), ('Roteadores'), ('Periféricos')
+
+DBCC CHECKIDENT('categorias', reseed, 0)
+
+sp_helpdb vendas
+sp_help categorias
